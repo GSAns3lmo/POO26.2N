@@ -1,6 +1,8 @@
 import prompt from "prompt-sync";
 import { Artista } from "./Artista.ts";
 import { Album } from "./Album.ts";
+import { Genero } from "./Genero.ts";
+import { Playlist } from "./Playlist.ts";
 
 
 const teclado = prompt(); // para fazer um menu no terminal (substituindo o require)
@@ -20,12 +22,25 @@ while (true) {
     let escolha = +teclado("Escolha uma opção: ")
 
 switch (escolha) {
-        case 1:
-            alb.();
-            break;
+    case 1:
+        console.log(a);
+        break;
 
-        default:
-            break;
-    }
+    case 2:
+        console.log("Gêneros");
+        break;
+
+    case 3:
+        console.log(alb);
+        break;
+
+    case 4:
+        console.log("Alterar Biblioteca");
+        break;
+
+    default:
+        console.log("Opção inválida");
+        break;
+}
 
     }
